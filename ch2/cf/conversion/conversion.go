@@ -32,7 +32,7 @@ func CToK(c Celsius) Kelvin { return Kelvin(c + 273.27) }
 func KToC(k Kelvin) Celsius { return Celsius(k - 273.27) }
 
 func KToF(k Kelvin) Fahrenheit { return CToF(KToC(k)) }
-func FToK(f Fahrenheit) Kelvin { return CToK(CToF(f)) }
+func FToK(f Fahrenheit) Kelvin { return CToK(FToC(f)) }
 
 func FToM(f Feet) Meter { return Meter(f * 0.3048) }
 func MToF(m Meter) Feet { return Feet(m / 0.3048) }
