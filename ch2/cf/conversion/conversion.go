@@ -20,10 +20,10 @@ const (
 func (c Celsius) String() string    { return fmt.Sprintf("%g°C", c) }
 func (f Fahrenheit) String() string { return fmt.Sprintf("%g°F", f) }
 func (k Kelvin) String() string     { return fmt.Sprintf("%g K", k) }
-func (f Feet) String() string { return fmt.Sprintf("%g ft", f)}
-func (m Meter) String() string { return fmt.Sprintf("%g meters", m) }
-func (p Pound) String() string { return fmt.Sprintf("%g lbs", p) }
-func (k Kilo) String() string { return fmt.Springf("%g kg", k) }
+func (f Feet) String() string       { return fmt.Sprintf("%g ft", f) }
+func (m Meter) String() string      { return fmt.Sprintf("%g meters", m) }
+func (p Pound) String() string      { return fmt.Sprintf("%g lbs", p) }
+func (k Kilo) String() string       { return fmt.Sprintf("%g kg", k) }
 
 func CToF(c Celsius) Fahrenheit { return Fahrenheit(c*9/5 + 32) }
 func FToC(f Fahrenheit) Celsius { return Celsius((f - 32) * 5 / 9) }
